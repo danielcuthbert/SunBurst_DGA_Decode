@@ -1,7 +1,12 @@
 # -*- coding:utf-8 -*- 
+# change to work with Python3 as who the hell uses 2 still???
+# Great work by the RedDrip7 team
+
+
+
 import sys,os
 import random
-import base64
+import base64   
 import random
 '''  
 # author = "QiAnXin_RedDrip"
@@ -118,9 +123,7 @@ def Decode(string):
 		pass
 	return retstring
 
-#print Encode("qingmei-inc.com")
-#print Decode("aovthro08ove0ge2h")
-#print Base32Decode("9tslbqv1ftss4r01eqtobmv1")
+
 
 '''
   1fik67gkncg86q6daovthro0love0oe2.appsync-api.us-west-2.avsvmcloud.com
@@ -144,6 +147,6 @@ for line in sys.stdin:
 		else:
 			comp = Decode(string)
 
-		print "%s,%s" % (line.rstrip(),comp)
+		print("%s,%s" % (line.rstrip(),comp))
 	except:
 		pass
